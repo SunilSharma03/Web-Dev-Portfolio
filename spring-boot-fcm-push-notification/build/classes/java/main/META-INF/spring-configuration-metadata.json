@@ -1,0 +1,93 @@
+{
+  "groups": [
+    {
+      "name": "fcm",
+      "type": "io.github.waileong.fcm.config.FcmProperties",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties"
+    },
+    {
+      "name": "fcm.connection",
+      "type": "io.github.waileong.fcm.config.FcmProperties$ConnectionSetting",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties",
+      "sourceMethod": "getConnection()"
+    },
+    {
+      "name": "fcm.credential",
+      "type": "io.github.waileong.fcm.config.FcmProperties$Credential",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties",
+      "sourceMethod": "getCredential()"
+    },
+    {
+      "name": "fcm.jwt-token-pool-setting",
+      "type": "io.github.waileong.fcm.config.FcmProperties$JwtTokenPoolSetting",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties",
+      "sourceMethod": "getJwtTokenPoolSetting()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "fcm.connection.connect-timeout",
+      "type": "java.time.Duration",
+      "description": "Connect timeout duration for {@code HttpClient}. @see HttpClient.Builder#connectTimeout(Duration)",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties$ConnectionSetting"
+    },
+    {
+      "name": "fcm.connection.read-timeout",
+      "type": "java.time.Duration",
+      "description": "Read timeout duration for the underlying HTTP client. @see JdkClientHttpRequestFactory#setReadTimeout(Duration)",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties$ConnectionSetting"
+    },
+    {
+      "name": "fcm.connection.ssl-bundle-name",
+      "type": "java.lang.String",
+      "description": "SSL bundle name for setting up SSL context in {@code HttpClient}. @see HttpClient.Builder#sslContext(SSLContext)",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties$ConnectionSetting"
+    },
+    {
+      "name": "fcm.credential.client-email",
+      "type": "java.lang.String",
+      "description": "The client email associated with the Firebase service account, used for authentication.",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties$Credential"
+    },
+    {
+      "name": "fcm.credential.jwt-expire-duration",
+      "type": "java.time.Duration",
+      "description": "The time period a JWT token remains valid, set to 1 hour by default.",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties$Credential",
+      "defaultValue": "1h"
+    },
+    {
+      "name": "fcm.credential.private-key",
+      "type": "java.lang.String",
+      "description": "The private key from the Firebase service account JSON file, necessary for authentication.",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties$Credential"
+    },
+    {
+      "name": "fcm.credential.private-key-id",
+      "type": "java.lang.String",
+      "description": "The private key ID from the Firebase service account JSON file.",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties$Credential"
+    },
+    {
+      "name": "fcm.credential.project-id",
+      "type": "java.lang.String",
+      "description": "The project ID associated with the Firebase service account.",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties$Credential"
+    },
+    {
+      "name": "fcm.jwt-token-pool-setting.max-idle",
+      "type": "java.lang.Integer",
+      "description": "Max number of idle JWT tokens in the pool.",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties$JwtTokenPoolSetting",
+      "defaultValue": 20
+    },
+    {
+      "name": "fcm.jwt-token-pool-setting.max-total",
+      "type": "java.lang.Integer",
+      "description": "Max total number of JWT tokens in the pool.",
+      "sourceType": "io.github.waileong.fcm.config.FcmProperties$JwtTokenPoolSetting",
+      "defaultValue": 20
+    }
+  ],
+  "hints": []
+}
