@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #2E86AB; /* Deep ocean blue (primary) - blue-600 */
+    --color-primary-50: #EBF4F8; /* Light blue (50-level shade) - blue-50 */
+    --color-primary-100: #D7E9F3; /* Light blue (100-level shade) - blue-100 */
+    --color-primary-200: #B0D3E7; /* Light blue (200-level shade) - blue-200 */
+    --color-primary-300: #88BDDB; /* Medium light blue (300-level shade) - blue-300 */
+    --color-primary-400: #5DA1C3; /* Medium blue (400-level shade) - blue-400 */
+    --color-primary-500: #2E86AB; /* Primary blue (500-level shade) - blue-500 */
+    --color-primary-600: #266B86; /* Dark blue (600-level shade) - blue-600 */
+    --color-primary-700: #1E5061; /* Darker blue (700-level shade) - blue-700 */
+    --color-primary-800: #16353C; /* Very dark blue (800-level shade) - blue-800 */
+    --color-primary-900: #0E1A17; /* Darkest blue (900-level shade) - blue-900 */
+
+    /* Secondary Colors */
+    --color-secondary: #F18F01; /* Sunset orange (secondary) - orange-500 */
+    --color-secondary-50: #FEF7E6; /* Light orange (50-level shade) - orange-50 */
+    --color-secondary-100: #FDEFCD; /* Light orange (100-level shade) - orange-100 */
+    --color-secondary-200: #FBDF9B; /* Light orange (200-level shade) - orange-200 */
+    --color-secondary-300: #F9CF69; /* Medium light orange (300-level shade) - orange-300 */
+    --color-secondary-400: #F5AF35; /* Medium orange (400-level shade) - orange-400 */
+    --color-secondary-500: #F18F01; /* Secondary orange (500-level shade) - orange-500 */
+    --color-secondary-600: #C17301; /* Dark orange (600-level shade) - orange-600 */
+    --color-secondary-700: #915701; /* Darker orange (700-level shade) - orange-700 */
+    --color-secondary-800: #613B01; /* Very dark orange (800-level shade) - orange-800 */
+    --color-secondary-900: #301E00; /* Darkest orange (900-level shade) - orange-900 */
+
+    /* Accent Colors */
+    --color-accent: #FF6B6B; /* Warm coral (accent) - red-400 */
+    --color-accent-50: #FFF0F0; /* Light coral (50-level shade) - red-50 */
+    --color-accent-100: #FFE1E1; /* Light coral (100-level shade) - red-100 */
+    --color-accent-200: #FFC3C3; /* Light coral (200-level shade) - red-200 */
+    --color-accent-300: #FFA5A5; /* Medium light coral (300-level shade) - red-300 */
+    --color-accent-400: #FF6B6B; /* Accent coral (400-level shade) - red-400 */
+    --color-accent-500: #FF4757; /* Medium coral (500-level shade) - red-500 */
+    --color-accent-600: #E63946; /* Dark coral (600-level shade) - red-600 */
+    --color-accent-700: #CC2936; /* Darker coral (700-level shade) - red-700 */
+    --color-accent-800: #B31926; /* Very dark coral (800-level shade) - red-800 */
+    --color-accent-900: #990916; /* Darkest coral (900-level shade) - red-900 */
+
+    /* Background Colors */
+    --color-background: #FEFEFE; /* Clean canvas (background) - gray-50 */
+    --color-surface: #F8F9FA; /* Subtle card elevation (surface) - gray-100 */
+
+    /* Text Colors */
+    --color-text-primary: #2C3E50; /* Comfortable reading (text primary) - slate-700 */
+    --color-text-secondary: #6C757D; /* Clear hierarchy (text secondary) - gray-500 */
+
+    /* Status Colors */
+    --color-success: #28A745; /* Positive confirmation (success) - green-600 */
+    --color-success-50: #F0F9F4; /* Light success (50-level shade) - green-50 */
+    --color-success-100: #E1F3E8; /* Light success (100-level shade) - green-100 */
+    --color-success-200: #C3E7D1; /* Light success (200-level shade) - green-200 */
+    --color-success-300: #A5DBBA; /* Medium light success (300-level shade) - green-300 */
+    --color-success-400: #66C383; /* Medium success (400-level shade) - green-400 */
+    --color-success-500: #28A745; /* Success green (500-level shade) - green-500 */
+    --color-success-600: #208637; /* Dark success (600-level shade) - green-600 */
+    --color-success-700: #186529; /* Darker success (700-level shade) - green-700 */
+    --color-success-800: #10441B; /* Very dark success (800-level shade) - green-800 */
+    --color-success-900: #08230D; /* Darkest success (900-level shade) - green-900 */
+
+    --color-warning: #FFC107; /* Helpful alerts (warning) - yellow-500 */
+    --color-warning-50: #FFFBF0; /* Light warning (50-level shade) - yellow-50 */
+    --color-warning-100: #FFF7E1; /* Light warning (100-level shade) - yellow-100 */
+    --color-warning-200: #FFEFC3; /* Light warning (200-level shade) - yellow-200 */
+    --color-warning-300: #FFE7A5; /* Medium light warning (300-level shade) - yellow-300 */
+    --color-warning-400: #FFD769; /* Medium warning (400-level shade) - yellow-400 */
+    --color-warning-500: #FFC107; /* Warning yellow (500-level shade) - yellow-500 */
+    --color-warning-600: #E6AD06; /* Dark warning (600-level shade) - yellow-600 */
+    --color-warning-700: #CC9A05; /* Darker warning (700-level shade) - yellow-700 */
+    --color-warning-800: #B38704; /* Very dark warning (800-level shade) - yellow-800 */
+    --color-warning-900: #997303; /* Darkest warning (900-level shade) - yellow-900 */
+
+    --color-error: #DC3545; /* Clear problem indication (error) - red-600 */
+    --color-error-50: #FDF2F2; /* Light error (50-level shade) - red-50 */
+    --color-error-100: #FBE5E6; /* Light error (100-level shade) - red-100 */
+    --color-error-200: #F7CBCD; /* Light error (200-level shade) - red-200 */
+    --color-error-300: #F3B1B4; /* Medium light error (300-level shade) - red-300 */
+    --color-error-400: #EB777B; /* Medium error (400-level shade) - red-400 */
+    --color-error-500: #DC3545; /* Error red (500-level shade) - red-500 */
+    --color-error-600: #C62D3A; /* Dark error (600-level shade) - red-600 */
+    --color-error-700: #B0252F; /* Darker error (700-level shade) - red-700 */
+    --color-error-800: #9A1D24; /* Very dark error (800-level shade) - red-800 */
+    --color-error-900: #841519; /* Darkest error (900-level shade) - red-900 */
+
+    /* Border Colors */
+    --color-border: #E9ECEF; /* Minimal borders (border) - gray-200 */
+    --color-border-light: rgba(46, 134, 171, 0.12); /* Brand border light - blue-200 with opacity */
+  }
+
+  * {
+    border-color: theme('colors.border');
+  }
+
+  body {
+    background-color: theme('colors.background');
+    color: theme('colors.text.primary');
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+
+  .font-accent {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-primary-600 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary-300;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-secondary-600 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-secondary-300;
+  }
+
+  .btn-outline {
+    @apply border border-primary text-primary px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-300;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-border p-6 transition-all duration-300 ease-out hover:shadow-md hover:-translate-y-1;
+  }
+
+  .card-elevated {
+    @apply bg-white rounded-lg shadow-lg p-6 transition-all duration-300 ease-out;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary transition-all duration-200 ease-out;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .shadow-brand {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .shadow-brand-lg {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  .shadow-brand-xl {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  .animation-spring {
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .aspect-golden {
+    aspect-ratio: 1.618;
+  }
+
+  .grid-golden {
+    grid-template-columns: 1fr 1.618fr;
+  }
+}
+
+/* Custom animations */
+@keyframes searchSuggestion {
+  0%, 25% { opacity: 1; transform: translateY(0); }
+  30%, 70% { opacity: 0; transform: translateY(-10px); }
+  75%, 100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-brand {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-search-suggestion {
+  animation: searchSuggestion 4s infinite;
+}
+
+.animate-pulse-brand {
+  animation: pulse-brand 2s infinite;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
