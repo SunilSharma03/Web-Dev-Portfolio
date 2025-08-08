@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Food - Recipe Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mood Food</h1>
+        <p>How are you feeling today?</p>
+        
+        <div class="mood-selector">
+            <button class="mood-btn" data-mood="happy">😊 Happy</button>
+            <button class="mood-btn" data-mood="sad">😢 Sad</button>
+            <button class="mood-btn" data-mood="stressed">😰 Stressed</button>
+            <button class="mood-btn" data-mood="energetic">⚡ Energetic</button>
+            <button class="mood-btn" data-mood="tired">😴 Tired</button>
+        </div>
+
+        <div class="recipe-container" style="display: none;">
+            <h2 id="recipe-title"></h2>
+            <p id="recipe-description"></p>
+            <h3>Ingredients:</h3>
+            <ul id="recipe-ingredients"></ul>
+            <h3>Instructions:</h3>
+            <ol id="recipe-instructions"></ol>
+            <button id="new-recipe-btn">Show me another recipe</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
