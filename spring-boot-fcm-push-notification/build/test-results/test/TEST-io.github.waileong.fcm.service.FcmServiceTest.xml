@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.github.waileong.fcm.service.FcmServiceTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2025-07-19T16:48:34" hostname="LAPTOP-AHAKA1HS" time="0.001">
+  <properties/>
+  <testcase name="testSendNotification()" classname="io.github.waileong.fcm.service.FcmServiceTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
