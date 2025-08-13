@@ -1,0 +1,20 @@
+{
+  "name": "test-case-generator",
+  "version": "1.0.0",
+  "description": "AI-powered test case generator with GitHub integration",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["testing", "github", "ai", "test-generation", "react", "nodejs"],
+  "author": "Sunil",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
