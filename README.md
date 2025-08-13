@@ -81,13 +81,13 @@ Hi, I’m **Sunil Sharma** — a passionate and results-driven **Web Developer a
 
 ## 📢 Contribution
 
-Got a cool project idea or improvement? Feel free to [fork](https://github.com/SunilSharma03/Web-Dev-Portfolio/fork), create a new branch, and open a pull request. Let’s build and grow together! 🤝
+Got a cool project idea or improvement? Feel free to [fork](https://github.com/sunbyte15/Web-Dev-Portfolio/fork), create a new branch, and open a pull request. Let’s build and grow together! 🤝
 
 ---
 
 ## 📬 Connect with Me
 
-- GitHub: [@SunilSharma03](https://github.com/SunilSharma03)
+- GitHub: [@SunilSharma03](https://github.com/sunbyte16)
 - LinkedIn: [Sunil Kumar](#) *(Add your LinkedIn URL here)*
 - Twitter/X: [@YourHandle](#) *(Optional)*
 
