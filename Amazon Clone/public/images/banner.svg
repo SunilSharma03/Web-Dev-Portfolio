@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="600" viewBox="0 0 1500 600" fill="none">
+  <rect width="1500" height="600" fill="#232F3E"/>
+  <path d="M750 150C861.046 150 951 239.954 951 351C951 462.046 861.046 552 750 552C638.954 552 549 462.046 549 351C549 239.954 638.954 150 750 150Z" fill="#FF9900"/>
+  <rect x="300" y="250" width="300" height="200" rx="10" fill="#FEBD69"/>
+  <rect x="900" y="250" width="300" height="200" rx="10" fill="#FEBD69"/>
+  <text x="750" y="100" font-family="Arial" font-size="48" text-anchor="middle" fill="white">Amazon Prime Day Deals</text>
+  <text x="450" y="350" font-family="Arial" font-size="32" text-anchor="middle" fill="#232F3E">Save up to 50%</text>
+  <text x="1050" y="350" font-family="Arial" font-size="32" text-anchor="middle" fill="#232F3E">Free Shipping</text>
+</svg>
