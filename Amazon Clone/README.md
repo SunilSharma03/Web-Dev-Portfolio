@@ -39,7 +39,7 @@ A modern, fully responsive e-commerce platform that replicates the core function
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/amazon-clone.git
+   git clone https://github.com/sunbyte16/amazon-clone.git
    cd amazon-clone
    ```
 
