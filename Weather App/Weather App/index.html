@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://api.weatherapi.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Weather Now</h1>
+
+    <form id="search-form" autocomplete="off" novalidate>
+      <input id="location-input" type="text" placeholder="Enter city or ZIP (e.g., London)" aria-label="Location" required>
+      <button type="submit" id="search-button">Search</button>
+    </form>
+
+    <section id="status" class="status" aria-live="polite"></section>
+
+    <section id="result" class="card hidden">
+      <div class="location">
+        <span id="place"></span>
+        <span id="localtime"></span>
+      </div>
+      <div class="current">
+        <img id="icon" alt="" />
+        <div class="temps">
+          <span id="tempC" class="temp"></span>
+          <span id="condition"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="creator">Built by <strong>Sunil Kumar</strong> <span aria-hidden="true">•</span> <span class="symbols">☀️🌧️🌡️</span></span>
+      <nav class="social">
+        <a href="https://github.com/sunbyte16" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.49.5.092.682-.217.682-.483 0-.237-.01-1.025-.014-1.86-2.782.604-3.369-1.187-3.369-1.187-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.004.07 1.532 1.032 1.532 1.032.892 1.529 2.341 1.087 2.91.832.091-.647.35-1.087.636-1.338-2.221-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.563 9.563 0 0 1 12 6.844c.85.004 1.705.115 2.504.338 1.909-1.294 2.748-1.025 2.748-1.025.546 1.378.203 2.397.1 2.65.64.699 1.028 1.592 1.028 2.683 0 3.842-2.337 4.687-4.566 4.936.36.31.679.921.679 1.856 0 1.339-.012 2.419-.012 2.748 0 .268.18.58.688.481A10.004 10.004 0 0 0 22 12c0-5.523-4.477-10-10-10Z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/sunil-kumar-bb88bb31a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.983 3.5C4.983 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.483 1.12 2.483 2.5ZM.24 8h4.52v14H.24V8Zm7.842 0h4.332v1.91h.062c.603-1.137 2.078-2.337 4.28-2.337 4.58 0 5.422 3.013 5.422 6.932V22H17.69v-6.675c0-1.592-.03-3.64-2.218-3.64-2.22 0-2.56 1.733-2.56 3.523V22H8.082V8Z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+  
+</html>
+
+
